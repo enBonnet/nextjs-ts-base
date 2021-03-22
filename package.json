@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-base",
+  "name": "nextts-base",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{ts,tsx}": [
+        "eslint --cache --fix"
+      ],
+      "**/*.+(ts|tsx|json|css)": [
+        "prettier --write"
+      ]
+    }
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "4.0.3",
@@ -39,7 +54,9 @@
     "eslint-loader": "4.0.2",
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "7.22.0",
+    "husky": "5.2.0",
     "jest": "26.6.3",
+    "lint-staged": "10.5.4",
     "postcss": "8.2.8",
     "tailwindcss": "2.0.4",
     "ts-jest": "26.5.4",

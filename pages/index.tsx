@@ -11,6 +11,9 @@ export default function Home() {
           Hola este es un _boilerplate_ de{" "}
           <a href="https://nextjs.org/learn">Next.js</a>.
         </p>
+        <ul>
+          <li>Husky</li>
+        </ul>
       </section>
     </div>
   );
