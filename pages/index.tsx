@@ -14,6 +14,7 @@ export default function Home() {
         <ul>
           <li>jest</li>
           <li>husky</li>
+          <li>tailwindcss</li>
         </ul>
       </section>
     </div>
