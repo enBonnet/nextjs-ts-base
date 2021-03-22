@@ -12,7 +12,8 @@ export default function Home() {
           <a href="https://nextjs.org/learn">Next.js</a>.
         </p>
         <ul>
-          <li>Husky</li>
+          <li>jest</li>
+          <li>husky</li>
         </ul>
       </section>
     </div>
