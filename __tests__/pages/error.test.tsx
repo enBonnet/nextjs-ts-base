@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { render, RenderResult } from "@testing-library/react";
 import Error from "../../pages/_error";
 
